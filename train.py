@@ -8,12 +8,13 @@ import torch.optim as optim
 import torch.backends.cudnn as cudnn
 from torch.utils.data.dataloader import DataLoader
 from tqdm import tqdm
+import PIL.Image as pil_image
 
 from models import SRCNN, VDSR, SRResNet
-from datasets import TrainDataset, EvalDataset
+from LapSRN import Net as LapSRN
 from utils import AverageMeter, calc_psnr
-
-from resdataset import PreprocessDataset
+import torch.nn.functional as F
+from dataset import PreprocessDataset
 
 
 if __name__ == '__main__':
@@ -39,48 +40,28 @@ if __name__ == '__main__':
 
     torch.manual_seed(args.seed)
 
-    modelName = "VDSR"
+    train_dataset = PreprocessDataset()
+    train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size)
+
+    eval_dataset = PreprocessDataset('dataset/Set5-test/')
+    eval_dataloader = DataLoader(eval_dataset, batch_size=args.batch_size)
+
+
+    modelName = "LapSRN"
 
     if modelName == "SRCNN":
-        model = SRCNN().to(device)
-        train_dataset = TrainDataset(args.train_file)
-        train_dataloader = DataLoader(dataset=train_dataset,
-                                      batch_size=args.batch_size,
-                                      shuffle=True,
-                                      num_workers=args.num_workers,
-                                      pin_memory=True,
-                                      drop_last=True)
-        eval_dataset = EvalDataset(args.eval_file)
-        eval_dataloader = DataLoader(dataset=eval_dataset, batch_size=1)
+        model = SRCNN(3).to(device)
     elif modelName == "SRResNet":
         model = SRResNet().to(device)
-        train_dataset = PreprocessDataset()
-        train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size)
-
-        eval_dataset = PreprocessDataset('dataset/Set5-test/')
-        eval_dataloader = DataLoader(eval_dataset, batch_size=args.batch_size)
     elif modelName == "VDSR":
         model = VDSR().to(device)
-        train_dataset = TrainDataset(args.train_file)
-        train_dataloader = DataLoader(dataset=train_dataset,
-                                      batch_size=args.batch_size,
-                                      shuffle=True,
-                                      num_workers=args.num_workers,
-                                      pin_memory=True,
-                                      drop_last=True)
-        eval_dataset = EvalDataset(args.eval_file)
-        eval_dataloader = DataLoader(dataset=eval_dataset, batch_size=1)
+    elif modelName == "LapSRN":
+        model = LapSRN().to(device)
 
 
 
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
-    # optimizer = optim.Adam([
-    #     {'params': model.conv1.parameters()},
-    #     {'params': model.conv2.parameters()},
-    #     {'params': model.conv3.parameters(), 'lr': args.lr * 0.1}
-    # ], lr=args.lr)
-
 
     best_weights = copy.deepcopy(model.state_dict())
     best_epoch = 0
@@ -98,6 +79,8 @@ if __name__ == '__main__':
 
                 inputs = inputs.to(device)
                 labels = labels.to(device)
+                if modelName == "SRCNN"or modelName == "VDSR":
+                    inputs = F.interpolate(inputs, size=labels.shape[2:], mode='bicubic', align_corners=False)
 
                 preds = model(inputs)
 
@@ -121,6 +104,8 @@ if __name__ == '__main__':
             inputs, labels = data
 
             inputs = inputs.to(device)
+            if modelName == "SRCNN"or modelName == "VDSR":
+                inputs = F.interpolate(inputs, size=labels.shape[2:], mode='bicubic', align_corners=False)
             labels = labels.to(device)
 
             with torch.no_grad():

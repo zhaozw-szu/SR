@@ -13,7 +13,7 @@ path = 'dataset/T91-train/'
 class PreprocessDataset(Dataset):
     """预处理数据集类"""
 
-    def __init__(self, imgPath=path, transforms=transform, ex=10):
+    def __init__(self, imgPath=path, ex=10):
         """初始化预处理数据集类"""
         self.transforms = transform
 

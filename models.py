@@ -16,13 +16,10 @@ class SRCNN(nn.Module):
         x = self.conv3(x)
         return x
 
-
-
-
 class VDSR(nn.Module):
     def __init__(self):
         super(VDSR, self).__init__()
-        self.firstPart = nn.Conv2d(1, 64, kernel_size=3, stride=1, padding=1, bias=False)
+        self.firstPart = nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1, bias=False)
 
         self.midPart = [nn.Conv2d(64, 64, kernel_size=3, stride=1, padding=1, bias=False), nn.ReLU(inplace=True)]
         for _ in range(17):
@@ -30,7 +27,7 @@ class VDSR(nn.Module):
                 [nn.Conv2d(64, 64, kernel_size=3, stride=1, padding=1, bias=False), nn.ReLU(inplace=True)])
         self.midPart = nn.Sequential(*self.midPart)
 
-        self.lastPart = nn.Conv2d(64, 1, kernel_size=3, stride=1, padding=1, bias=False)
+        self.lastPart = nn.Conv2d(64, 3, kernel_size=3, stride=1, padding=1, bias=False)
         self.relu = nn.ReLU(inplace=True)
 
     def forward(self, x):
@@ -40,7 +37,6 @@ class VDSR(nn.Module):
         x = self.lastPart(x)
         out = torch.add(x, residual)
         return out
-
 
 class SRResNet(nn.Module):
     """SRResNet模型(4x)"""
