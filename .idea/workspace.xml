@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8615b9b-cb12-4f84-9adc-bb7f8d125256" name="更改" comment="11">
+    <list default="true" id="e8615b9b-cb12-4f84-9adc-bb7f8d125256" name="更改" comment="20240605">
       <change afterPath="$PROJECT_DIR$/LapSRN.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -60,7 +60,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.test2">
     <configuration name="listmodel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SRCNN" />
       <option name="ENV_FILES" value="" />
@@ -107,6 +107,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SRCNN" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SRCNN" />
       <option name="ENV_FILES" value="" />
@@ -132,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.prepare" />
         <item itemvalue="Python.listmodel" />
@@ -160,7 +184,7 @@
       <workItem from="1717384342285" duration="20000" />
       <workItem from="1717384369091" duration="1075000" />
       <workItem from="1717385462339" duration="289000" />
-      <workItem from="1717505350518" duration="18545000" />
+      <workItem from="1717505350518" duration="19217000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -179,7 +203,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="20240605" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240605" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -225,9 +250,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SRCNN$train.coverage" NAME="train 覆盖结果" MODIFIED="1716991935225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SR$models.coverage" NAME="models 覆盖结果" MODIFIED="1717571138753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SR$train.coverage" NAME="train 覆盖结果" MODIFIED="1717588365012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SR$train.coverage" NAME="train 覆盖结果" MODIFIED="1717598934090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SR$LapSRN.coverage" NAME="LapSRN 覆盖结果" MODIFIED="1717586809569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SR$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1717583363633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SR$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1717598945220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SRCNN$listmodel.coverage" NAME="listmodel 覆盖结果" MODIFIED="1716907827786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SRCNN$prepare.coverage" NAME="prepare 覆盖结果" MODIFIED="1716991920767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
