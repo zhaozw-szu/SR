@@ -1209,6 +1209,460 @@ eval psnr: 24.07
 best epoch: 186, psnr: 25.08
 """
 
+log4 = """epoch: 0/199: : 910it [01:15, 11.98it/s, loss=0.042029]
+eval psnr: 18.93
+epoch: 1/199: : 910it [04:16,  3.55it/s, loss=0.013552]
+eval psnr: 19.79
+epoch: 2/199: : 910it [02:58,  5.11it/s, loss=0.011570]
+eval psnr: 20.15
+epoch: 3/199: : 910it [04:12,  3.60it/s, loss=0.011102]
+eval psnr: 20.54
+epoch: 4/199: : 910it [04:06,  3.70it/s, loss=0.009936]
+eval psnr: 21.56
+epoch: 5/199: : 910it [01:22, 10.97it/s, loss=0.008486]
+eval psnr: 21.96
+epoch: 6/199: : 910it [01:56,  7.81it/s, loss=0.007913]
+eval psnr: 21.39
+epoch: 7/199: : 910it [01:38,  9.23it/s, loss=0.007443]
+eval psnr: 22.47
+epoch: 8/199: : 910it [01:23, 10.87it/s, loss=0.007666]
+eval psnr: 22.22
+epoch: 9/199: : 910it [01:24, 10.79it/s, loss=0.007393]
+eval psnr: 22.47
+epoch: 10/199: : 910it [01:39,  9.14it/s, loss=0.007265]
+epoch: 11/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.91
+epoch: 11/199: : 910it [01:22, 11.07it/s, loss=0.007299]
+eval psnr: 22.21
+epoch: 12/199: : 910it [02:40,  5.66it/s, loss=0.006997]
+eval psnr: 23.07
+epoch: 13/199: : 910it [01:21, 11.20it/s, loss=0.006985]
+eval psnr: 23.16
+epoch: 14/199: : 910it [01:22, 11.09it/s, loss=0.007302]
+eval psnr: 22.97
+epoch: 15/199: : 910it [01:21, 11.12it/s, loss=0.007168]
+epoch: 16/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.27
+epoch: 16/199: : 910it [01:22, 11.05it/s, loss=0.006985]
+epoch: 17/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.57
+epoch: 17/199: : 910it [01:21, 11.10it/s, loss=0.006877]
+epoch: 18/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.12
+epoch: 18/199: : 910it [01:21, 11.17it/s, loss=0.007058]
+eval psnr: 23.14
+epoch: 19/199: : 910it [01:21, 11.22it/s, loss=0.006913]
+epoch: 20/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.63
+epoch: 20/199: : 910it [01:21, 11.12it/s, loss=0.006772]
+epoch: 21/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.57
+epoch: 21/199: : 910it [01:22, 11.08it/s, loss=0.006703]
+epoch: 22/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.64
+epoch: 22/199: : 910it [01:22, 11.08it/s, loss=0.006880]
+eval psnr: 23.43
+epoch: 23/199: : 910it [01:21, 11.10it/s, loss=0.006930]
+epoch: 24/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.97
+epoch: 24/199: : 910it [01:22, 11.07it/s, loss=0.006629]
+eval psnr: 23.19
+epoch: 25/199: : 910it [01:22, 11.08it/s, loss=0.006861]
+epoch: 26/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.08
+epoch: 26/199: : 910it [01:21, 11.12it/s, loss=0.006696]
+epoch: 27/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.06
+epoch: 27/199: : 910it [01:22, 11.09it/s, loss=0.006753]
+eval psnr: 23.29
+epoch: 28/199: : 910it [01:22, 11.03it/s, loss=0.006677]
+epoch: 29/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.38
+epoch: 29/199: : 910it [01:22, 11.08it/s, loss=0.006849]
+epoch: 30/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.27
+epoch: 30/199: : 910it [01:22, 11.09it/s, loss=0.006656]
+epoch: 31/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.13
+epoch: 31/199: : 910it [01:22, 11.08it/s, loss=0.006654]
+epoch: 32/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.12
+epoch: 32/199: : 910it [01:22, 11.10it/s, loss=0.006819]
+epoch: 33/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.07
+epoch: 33/199: : 910it [01:22, 11.09it/s, loss=0.006489]
+eval psnr: 23.13
+epoch: 34/199: : 910it [01:22, 11.09it/s, loss=0.006571]
+epoch: 35/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.10
+epoch: 35/199: : 910it [01:21, 11.14it/s, loss=0.006623]
+eval psnr: 23.07
+epoch: 36/199: : 910it [01:21, 11.21it/s, loss=0.006426]
+epoch: 37/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.83
+epoch: 37/199: : 910it [01:21, 11.19it/s, loss=0.006249]
+eval psnr: 23.55
+epoch: 38/199: : 910it [01:21, 11.21it/s, loss=0.006399]
+epoch: 39/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.34
+epoch: 39/199: : 910it [01:21, 11.17it/s, loss=0.006605]
+epoch: 40/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.13
+epoch: 40/199: : 910it [01:21, 11.11it/s, loss=0.006322]
+epoch: 41/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.69
+epoch: 41/199: : 910it [01:21, 11.11it/s, loss=0.006527]
+epoch: 42/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.67
+epoch: 42/199: : 910it [01:22, 11.09it/s, loss=0.006200]
+epoch: 43/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.46
+epoch: 43/199: : 910it [01:22, 11.09it/s, loss=0.006363]
+eval psnr: 23.43
+epoch: 44/199: : 910it [01:21, 11.11it/s, loss=0.006292]
+epoch: 45/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.16
+epoch: 45/199: : 910it [01:21, 11.13it/s, loss=0.006346]
+epoch: 46/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.91
+epoch: 46/199: : 910it [01:21, 11.11it/s, loss=0.006356]
+epoch: 47/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.66
+epoch: 47/199: : 910it [01:21, 11.10it/s, loss=0.006245]
+eval psnr: 22.48
+epoch: 48/199: : 910it [01:26, 10.47it/s, loss=0.006188]
+eval psnr: 23.29
+epoch: 49/199: : 910it [01:23, 10.96it/s, loss=0.006272]
+epoch: 50/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.41
+epoch: 50/199: : 910it [01:31,  9.95it/s, loss=0.006253]
+epoch: 51/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.93
+epoch: 51/199: : 910it [01:38,  9.25it/s, loss=0.006199]
+epoch: 52/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.21
+epoch: 52/199: : 910it [01:24, 10.79it/s, loss=0.006000]
+epoch: 53/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.80
+epoch: 53/199: : 910it [01:22, 11.04it/s, loss=0.006216]
+eval psnr: 23.21
+epoch: 54/199: : 910it [01:23, 10.92it/s, loss=0.005993]
+epoch: 55/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.65
+epoch: 55/199: : 910it [01:22, 10.97it/s, loss=0.006248]
+epoch: 56/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.05
+epoch: 56/199: : 910it [01:21, 11.19it/s, loss=0.006035]
+eval psnr: 22.88
+epoch: 57/199: : 910it [01:21, 11.21it/s, loss=0.006318]
+epoch: 58/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.93
+epoch: 58/199: : 910it [01:20, 11.25it/s, loss=0.006076]
+eval psnr: 23.31
+epoch: 59/199: : 910it [01:21, 11.22it/s, loss=0.006150]
+epoch: 60/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.88
+epoch: 60/199: : 910it [01:20, 11.24it/s, loss=0.006087]
+eval psnr: 23.38
+epoch: 61/199: : 910it [01:20, 11.24it/s, loss=0.005978]
+eval psnr: 22.43
+epoch: 62/199: : 910it [01:20, 11.26it/s, loss=0.005948]
+eval psnr: 23.60
+epoch: 63/199: : 910it [01:21, 11.19it/s, loss=0.006161]
+eval psnr: 23.35
+epoch: 64/199: : 910it [01:23, 10.86it/s, loss=0.005882]
+eval psnr: 23.45
+epoch: 65/199: : 910it [01:22, 11.10it/s, loss=0.005988]
+epoch: 66/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.44
+epoch: 66/199: : 910it [01:20, 11.24it/s, loss=0.005700]
+eval psnr: 23.04
+epoch: 67/199: : 910it [01:20, 11.25it/s, loss=0.006092]
+epoch: 68/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.64
+epoch: 68/199: : 910it [01:20, 11.24it/s, loss=0.005855]
+epoch: 69/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.19
+epoch: 69/199: : 910it [01:20, 11.26it/s, loss=0.005908]
+epoch: 70/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.23
+epoch: 70/199: : 910it [01:20, 11.35it/s, loss=0.005999]
+epoch: 71/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.50
+epoch: 71/199: : 910it [01:20, 11.37it/s, loss=0.005988]
+eval psnr: 23.73
+epoch: 72/199: : 910it [01:20, 11.36it/s, loss=0.005873]
+epoch: 73/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.25
+epoch: 73/199: : 910it [01:20, 11.27it/s, loss=0.006056]
+eval psnr: 23.31
+epoch: 74/199: : 910it [01:20, 11.25it/s, loss=0.005725]
+eval psnr: 23.34
+epoch: 75/199: : 910it [01:20, 11.25it/s, loss=0.005957]
+epoch: 76/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.56
+epoch: 76/199: : 910it [01:20, 11.30it/s, loss=0.005811]
+epoch: 77/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.49
+epoch: 77/199: : 910it [01:20, 11.36it/s, loss=0.005716]
+eval psnr: 23.45
+epoch: 78/199: : 910it [01:20, 11.35it/s, loss=0.005865]
+eval psnr: 23.38
+epoch: 79/199: : 910it [01:19, 11.38it/s, loss=0.005794]
+epoch: 80/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.19
+epoch: 80/199: : 910it [01:20, 11.37it/s, loss=0.005718]
+eval psnr: 23.50
+epoch: 81/199: : 910it [01:19, 11.38it/s, loss=0.005775]
+epoch: 82/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.13
+epoch: 82/199: : 910it [01:20, 11.29it/s, loss=0.005779]
+epoch: 83/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.59
+epoch: 83/199: : 910it [01:20, 11.27it/s, loss=0.005596]
+epoch: 84/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.28
+epoch: 84/199: : 910it [01:20, 11.27it/s, loss=0.005833]
+epoch: 85/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.57
+epoch: 85/199: : 910it [01:20, 11.27it/s, loss=0.005655]
+eval psnr: 22.99
+epoch: 86/199: : 910it [01:20, 11.27it/s, loss=0.005741]
+epoch: 87/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.20
+epoch: 87/199: : 910it [01:20, 11.29it/s, loss=0.005683]
+epoch: 88/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.65
+epoch: 88/199: : 910it [01:20, 11.26it/s, loss=0.005851]
+eval psnr: 23.19
+epoch: 89/199: : 910it [01:20, 11.26it/s, loss=0.005605]
+epoch: 90/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.25
+epoch: 90/199: : 910it [01:20, 11.31it/s, loss=0.005849]
+eval psnr: 22.91
+epoch: 91/199: : 910it [01:20, 11.31it/s, loss=0.005670]
+eval psnr: 23.33
+epoch: 92/199: : 910it [01:20, 11.27it/s, loss=0.005682]
+eval psnr: 23.66
+epoch: 93/199: : 910it [01:20, 11.25it/s, loss=0.005656]
+eval psnr: 23.46
+epoch: 94/199: : 910it [01:20, 11.24it/s, loss=0.005851]
+epoch: 95/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 23.45
+epoch: 95/199: : 910it [01:20, 11.27it/s, loss=0.005618]
+eval psnr: 24.78
+epoch: 96/199: : 910it [01:20, 11.26it/s, loss=0.005604]
+eval psnr: 23.78
+epoch: 97/199: : 910it [01:20, 11.27it/s, loss=0.005720]
+epoch: 98/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 24.00
+epoch: 98/199: : 910it [01:20, 11.26it/s, loss=0.005682]
+eval psnr: 23.63
+epoch: 99/199: : 910it [01:20, 11.27it/s, loss=0.005467]
+epoch: 100/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.17
+epoch: 100/199: : 910it [01:20, 11.27it/s, loss=0.005553]
+eval psnr: 23.78
+epoch: 101/199: : 910it [01:20, 11.27it/s, loss=0.005477]
+epoch: 102/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.20
+epoch: 102/199: : 910it [01:20, 11.28it/s, loss=0.005577]
+eval psnr: 23.93
+epoch: 103/199: : 910it [01:21, 11.22it/s, loss=0.005492]
+eval psnr: 24.00
+epoch: 104/199: : 910it [01:20, 11.35it/s, loss=0.005434]
+eval psnr: 24.23
+epoch: 105/199: : 910it [01:20, 11.28it/s, loss=0.005910]
+epoch: 106/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.13
+epoch: 106/199: : 910it [01:20, 11.27it/s, loss=0.005651]
+eval psnr: 23.66
+epoch: 107/199: : 910it [01:20, 11.26it/s, loss=0.005534]
+eval psnr: 23.62
+epoch: 108/199: : 910it [01:20, 11.26it/s, loss=0.005350]
+eval psnr: 23.37
+epoch: 109/199: : 910it [01:20, 11.25it/s, loss=0.005683]
+epoch: 110/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.56
+epoch: 110/199: : 910it [01:19, 11.44it/s, loss=0.005736]
+eval psnr: 23.73
+epoch: 111/199: : 910it [01:19, 11.42it/s, loss=0.005452]
+eval psnr: 23.58
+epoch: 112/199: : 910it [01:20, 11.25it/s, loss=0.005599]
+eval psnr: 23.42
+epoch: 113/199: : 910it [01:20, 11.32it/s, loss=0.005439]
+eval psnr: 24.07
+epoch: 114/199: : 910it [01:20, 11.32it/s, loss=0.005488]
+eval psnr: 23.46
+epoch: 115/199: : 910it [01:20, 11.26it/s, loss=0.005493]
+epoch: 116/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.53
+epoch: 116/199: : 910it [01:21, 11.21it/s, loss=0.005608]
+eval psnr: 23.48
+epoch: 117/199: : 910it [01:20, 11.29it/s, loss=0.005457]
+eval psnr: 23.85
+epoch: 118/199: : 910it [01:20, 11.29it/s, loss=0.005450]
+eval psnr: 24.07
+epoch: 119/199: : 910it [01:20, 11.28it/s, loss=0.005315]
+eval psnr: 24.72
+epoch: 120/199: : 910it [01:20, 11.28it/s, loss=0.005345]
+epoch: 121/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.26
+epoch: 121/199: : 910it [01:20, 11.28it/s, loss=0.005495]
+epoch: 122/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.27
+epoch: 122/199: : 910it [01:20, 11.25it/s, loss=0.005326]
+eval psnr: 23.64
+epoch: 123/199: : 910it [01:20, 11.28it/s, loss=0.005369]
+epoch: 124/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.08
+epoch: 124/199: : 910it [01:20, 11.28it/s, loss=0.005448]
+epoch: 125/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.65
+epoch: 125/199: : 910it [01:20, 11.26it/s, loss=0.005380]
+epoch: 126/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.93
+epoch: 126/199: : 910it [01:28, 10.26it/s, loss=0.005404]
+epoch: 127/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.97
+epoch: 127/199: : 910it [01:24, 10.80it/s, loss=0.005549]
+eval psnr: 23.51
+epoch: 128/199: : 910it [01:21, 11.23it/s, loss=0.005377]
+epoch: 129/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.91
+epoch: 129/199: : 910it [01:20, 11.25it/s, loss=0.005426]
+eval psnr: 23.65
+epoch: 130/199: : 910it [01:21, 11.22it/s, loss=0.005334]
+epoch: 131/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.24
+epoch: 131/199: : 910it [01:20, 11.25it/s, loss=0.005236]
+eval psnr: 23.69
+epoch: 132/199: : 910it [01:20, 11.25it/s, loss=0.005357]
+eval psnr: 23.70
+epoch: 133/199: : 910it [01:20, 11.35it/s, loss=0.005461]
+epoch: 134/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.58
+epoch: 134/199: : 910it [01:19, 11.40it/s, loss=0.005427]
+eval psnr: 23.96
+epoch: 135/199: : 910it [01:20, 11.37it/s, loss=0.005390]
+epoch: 136/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.26
+epoch: 136/199: : 910it [01:20, 11.24it/s, loss=0.005414]
+eval psnr: 24.48
+epoch: 137/199: : 910it [01:21, 11.14it/s, loss=0.005445]
+eval psnr: 23.71
+epoch: 138/199: : 910it [01:22, 11.08it/s, loss=0.005418]
+eval psnr: 24.34
+epoch: 139/199: : 910it [01:20, 11.25it/s, loss=0.005410]
+eval psnr: 24.03
+epoch: 140/199: : 910it [01:20, 11.25it/s, loss=0.005335]
+eval psnr: 23.69
+epoch: 141/199: : 910it [01:20, 11.25it/s, loss=0.005288]
+eval psnr: 23.48
+epoch: 142/199: : 910it [01:20, 11.36it/s, loss=0.005399]
+eval psnr: 23.62
+epoch: 143/199: : 910it [01:21, 11.22it/s, loss=0.005401]
+eval psnr: 23.89
+epoch: 144/199: : 910it [01:21, 11.22it/s, loss=0.005443]
+epoch: 145/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.76
+epoch: 145/199: : 910it [01:21, 11.22it/s, loss=0.005232]
+eval psnr: 24.15
+epoch: 146/199: : 910it [01:21, 11.23it/s, loss=0.005287]
+eval psnr: 23.36
+epoch: 147/199: : 910it [01:21, 11.17it/s, loss=0.005259]
+eval psnr: 23.87
+epoch: 148/199: : 910it [01:21, 11.22it/s, loss=0.005314]
+eval psnr: 23.53
+epoch: 149/199: : 910it [01:20, 11.24it/s, loss=0.005255]
+epoch: 150/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.98
+epoch: 150/199: : 910it [01:21, 11.23it/s, loss=0.005114]
+eval psnr: 24.14
+epoch: 151/199: : 910it [01:21, 11.23it/s, loss=0.005308]
+epoch: 152/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.30
+epoch: 152/199: : 910it [01:21, 11.23it/s, loss=0.005505]
+epoch: 153/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.49
+epoch: 153/199: : 910it [01:20, 11.25it/s, loss=0.005277]
+eval psnr: 23.57
+epoch: 154/199: : 910it [01:21, 11.23it/s, loss=0.005239]
+epoch: 155/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.94
+epoch: 155/199: : 910it [01:21, 11.22it/s, loss=0.005187]
+eval psnr: 24.12
+epoch: 156/199: : 910it [01:20, 11.26it/s, loss=0.005146]
+epoch: 157/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.83
+epoch: 157/199: : 910it [01:20, 11.29it/s, loss=0.005349]
+epoch: 158/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.11
+epoch: 158/199: : 910it [01:21, 11.23it/s, loss=0.005061]
+epoch: 159/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.28
+epoch: 159/199: : 910it [01:20, 11.24it/s, loss=0.005207]
+eval psnr: 23.70
+epoch: 160/199: : 910it [01:20, 11.25it/s, loss=0.005411]
+eval psnr: 23.95
+epoch: 161/199: : 910it [01:20, 11.25it/s, loss=0.005283]
+eval psnr: 24.18
+epoch: 162/199: : 910it [01:20, 11.25it/s, loss=0.005116]
+eval psnr: 24.10
+epoch: 163/199: : 910it [01:20, 11.27it/s, loss=0.005328]
+epoch: 164/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.30
+epoch: 164/199: : 910it [01:21, 11.23it/s, loss=0.005166]
+eval psnr: 23.81
+epoch: 165/199: : 910it [01:20, 11.25it/s, loss=0.005132]
+epoch: 166/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.57
+epoch: 166/199: : 910it [01:21, 11.19it/s, loss=0.005082]
+eval psnr: 24.45
+epoch: 167/199: : 910it [01:22, 11.08it/s, loss=0.005148]
+eval psnr: 23.70
+epoch: 168/199: : 910it [01:21, 11.11it/s, loss=0.005200]
+epoch: 169/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.98
+epoch: 169/199: : 910it [01:21, 11.23it/s, loss=0.005177]
+eval psnr: 23.70
+epoch: 170/199: : 910it [01:20, 11.26it/s, loss=0.005181]
+epoch: 171/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.29
+epoch: 171/199: : 910it [01:20, 11.24it/s, loss=0.005333]
+eval psnr: 23.61
+epoch: 172/199: : 910it [01:20, 11.27it/s, loss=0.005239]
+eval psnr: 24.40
+epoch: 173/199: : 910it [01:21, 11.19it/s, loss=0.005060]
+epoch: 174/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.86
+epoch: 174/199: : 910it [01:21, 11.22it/s, loss=0.005065]
+eval psnr: 23.69
+epoch: 175/199: : 910it [01:21, 11.16it/s, loss=0.005279]
+epoch: 176/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.10
+epoch: 176/199: : 910it [01:22, 11.00it/s, loss=0.005031]
+epoch: 177/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.18
+epoch: 177/199: : 910it [01:21, 11.19it/s, loss=0.005053]
+eval psnr: 23.91
+epoch: 178/199: : 910it [01:20, 11.24it/s, loss=0.005156]
+epoch: 179/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.92
+epoch: 179/199: : 910it [01:21, 11.23it/s, loss=0.005171]
+eval psnr: 23.90
+epoch: 180/199: : 910it [01:20, 11.24it/s, loss=0.005223]
+eval psnr: 24.47
+epoch: 181/199: : 910it [01:20, 11.24it/s, loss=0.004999]
+eval psnr: 24.46
+epoch: 182/199: : 910it [01:21, 11.21it/s, loss=0.005102]
+eval psnr: 24.51
+epoch: 183/199: : 910it [01:20, 11.24it/s, loss=0.005088]
+epoch: 184/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.29
+epoch: 184/199: : 910it [01:20, 11.25it/s, loss=0.004989]
+epoch: 185/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.95
+epoch: 185/199: : 910it [01:20, 11.24it/s, loss=0.005132]
+eval psnr: 24.77
+epoch: 186/199: : 910it [01:21, 11.21it/s, loss=0.005137]
+eval psnr: 23.46
+epoch: 187/199: : 910it [01:20, 11.30it/s, loss=0.005071]
+eval psnr: 24.13
+epoch: 188/199: : 910it [01:20, 11.32it/s, loss=0.004991]
+eval psnr: 23.97
+epoch: 189/199: : 910it [01:20, 11.25it/s, loss=0.005261]
+eval psnr: 24.08
+epoch: 190/199: : 910it [01:20, 11.25it/s, loss=0.005081]
+eval psnr: 23.98
+epoch: 191/199: : 910it [01:21, 11.15it/s, loss=0.005085]
+epoch: 192/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 23.90
+epoch: 192/199: : 910it [01:20, 11.26it/s, loss=0.005076]
+epoch: 193/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.59
+epoch: 193/199: : 910it [01:21, 11.22it/s, loss=0.005067]
+epoch: 194/199:   0%|                                   | 0/896 [00:00<?, ?it/s]eval psnr: 24.07
+epoch: 194/199: : 910it [01:20, 11.24it/s, loss=0.005001]
+eval psnr: 24.03
+epoch: 195/199: : 910it [01:21, 11.19it/s, loss=0.005136]
+eval psnr: 24.38
+epoch: 196/199: : 910it [01:21, 11.23it/s, loss=0.004932]
+eval psnr: 23.29
+epoch: 197/199: : 910it [01:21, 11.23it/s, loss=0.005274]
+eval psnr: 23.60
+epoch: 198/199: : 910it [01:21, 11.22it/s, loss=0.004976]
+eval psnr: 24.07
+epoch: 199/199: : 910it [01:21, 11.22it/s, loss=0.004985]
+eval psnr: 24.03
+best epoch: 95, psnr: 24.78
+"""
+
+log5 = """epoch: 0/199: : 910it [13:56,  1.09it/s, loss=0.017342]
+eval psnr: 21.28
+epoch: 1/199: : 910it [12:48,  1.18it/s, loss=0.008541]
+eval psnr: 21.24
+epoch: 2/199: : 910it [10:02,  1.51it/s, loss=0.008055]
+eval psnr: 21.49
+epoch: 3/199: : 910it [17:15,  1.14s/it, loss=0.007592]
+eval psnr: 21.93
+epoch: 4/199: : 910it [16:57,  1.12s/it, loss=0.007450]
+eval psnr: 21.74
+epoch: 5/199: : 910it [17:11,  1.13s/it, loss=0.007475]
+eval psnr: 22.02
+epoch: 6/199: : 910it [17:20,  1.14s/it, loss=0.007181]
+eval psnr: 22.27
+epoch: 7/199: : 910it [17:05,  1.13s/it, loss=0.007235]
+epoch: 8/199:   0%|                                     | 0/896 [00:00<?, ?it/s]eval psnr: 22.04
+epoch: 8/199: : 910it [17:01,  1.12s/it, loss=0.006950]
+eval psnr: 21.94
+epoch: 9/199: : 910it [16:59,  1.12s/it, loss=0.007009]
+epoch: 10/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 21.87
+epoch: 10/199: : 910it [17:02,  1.12s/it, loss=0.007057]
+eval psnr: 22.16
+epoch: 11/199: : 910it [16:55,  1.12s/it, loss=0.007041]
+eval psnr: 22.33
+epoch: 12/199: : 910it [16:59,  1.12s/it, loss=0.006887]
+epoch: 13/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.15
+epoch: 13/199: : 910it [17:05,  1.13s/it, loss=0.006756]
+eval psnr: 22.88
+epoch: 14/199: : 910it [16:59,  1.12s/it, loss=0.006582]
+eval psnr: 22.49
+epoch: 15/199: : 910it [17:01,  1.12s/it, loss=0.006690]
+epoch: 16/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.56
+epoch: 16/199: : 910it [16:58,  1.12s/it, loss=0.006580]
+eval psnr: 22.50
+epoch: 17/199: : 910it [17:07,  1.13s/it, loss=0.006443]
+eval psnr: 23.21
+epoch: 18/199: : 910it [17:06,  1.13s/it, loss=0.006619]
+eval psnr: 22.61
+epoch: 19/199: : 910it [17:00,  1.12s/it, loss=0.006458]
+eval psnr: 22.81
+epoch: 20/199: : 910it [17:04,  1.13s/it, loss=0.006545]
+eval psnr: 22.64
+epoch: 21/199: : 910it [16:33,  1.09s/it, loss=0.006388]
+eval psnr: 22.34
+epoch: 22/199: : 910it [16:57,  1.12s/it, loss=0.006544]
+epoch: 23/199:   0%|                                    | 0/896 [00:00<?, ?it/s]eval psnr: 22.02
+epoch: 23/199: : 910it [17:21,  1.14s/it, loss=0.006259]
+eval psnr: 22.63
+epoch: 24/199: : 910it [17:08,  1.13s/it, loss=0.006184]
+eval psnr: 22.46"""
+
 def analyze(log):
     evalpsnr = []
     epoch = []
@@ -1233,11 +1687,15 @@ def analyze(log):
 psnr1, bestepoch1, loss1 = analyze(log1)
 psnr2, bestepoch2, loss2 = analyze(log2)
 psnr3, bestepoch3, loss3 = analyze(log3)
+psnr4, bestepoch4, loss4 = analyze(log4)
+psnr5, bestepoch5, loss5 = analyze(log5)
 
 plt.figure()
 plt.plot(loss1, label='SRCNN Loss')
 plt.plot(loss2, label='SRResNet Loss')
 plt.plot(loss3, label='VDSR Loss')
+plt.plot(loss4, label='CARN Loss')
+plt.plot(loss5, label='MemNet Loss')
 plt.title('Loss')
 plt.legend()
 plt.grid(True)
@@ -1247,6 +1705,8 @@ plt.figure()
 plt.plot(psnr1, label='SRCNN psnr')
 plt.plot(psnr2, label='SRResNet psnr')
 plt.plot(psnr3, label='VDSR psnr')
+plt.plot(psnr4, label='CARN psnr')
+plt.plot(psnr5, label='MemNet psnr')
 plt.title('psnr')
 plt.legend()
 plt.grid(True)

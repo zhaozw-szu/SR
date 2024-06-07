@@ -1,17 +1,18 @@
 import argparse
 import os
 import copy
-import timm
 import torch
 from torch import nn
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
 from torch.utils.data.dataloader import DataLoader
 from tqdm import tqdm
-import PIL.Image as pil_image
 
-from models import SRCNN, VDSR, SRResNet
-from LapSRN import Net as LapSRN
+from models.models import SRCNN, VDSR, SRResNet
+from models.LapSRN import Net as LapSRN
+from models.CARN import Net as CARN
+from models.memnet import MemNet as MemNet
+
 from utils import AverageMeter, calc_psnr
 import torch.nn.functional as F
 from dataset import PreprocessDataset
@@ -47,17 +48,25 @@ if __name__ == '__main__':
     eval_dataloader = DataLoader(eval_dataset, batch_size=args.batch_size)
 
 
-    modelName = "LapSRN"
+    modelName = "MemNet"
+    needup = False
 
     if modelName == "SRCNN":
         model = SRCNN(3).to(device)
+        needup = True
     elif modelName == "SRResNet":
         model = SRResNet().to(device)
     elif modelName == "VDSR":
         model = VDSR().to(device)
+        needup = True
     elif modelName == "LapSRN":
         model = LapSRN().to(device)
-
+    elif modelName == "CARN":
+        model = CARN().to(device)
+        needup = True
+    elif modelName == "MemNet":
+        model = MemNet(3, 64, 6, 6).to(device)
+        needup = True
 
 
     criterion = nn.MSELoss()
@@ -79,7 +88,7 @@ if __name__ == '__main__':
 
                 inputs = inputs.to(device)
                 labels = labels.to(device)
-                if modelName == "SRCNN"or modelName == "VDSR":
+                if needup:
                     inputs = F.interpolate(inputs, size=labels.shape[2:], mode='bicubic', align_corners=False)
 
                 preds = model(inputs)
@@ -104,8 +113,9 @@ if __name__ == '__main__':
             inputs, labels = data
 
             inputs = inputs.to(device)
-            if modelName == "SRCNN"or modelName == "VDSR":
+            if needup:
                 inputs = F.interpolate(inputs, size=labels.shape[2:], mode='bicubic', align_corners=False)
+
             labels = labels.to(device)
 
             with torch.no_grad():
