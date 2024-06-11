@@ -1663,6 +1663,408 @@ eval psnr: 22.63
 epoch: 24/199: : 910it [17:08,  1.13s/it, loss=0.006184]
 eval psnr: 22.46"""
 
+log6 = """epoch: 0/199: : 910it [00:32, 28.35it/s, loss=0.050327]
+eval psnr: 15.82
+epoch: 1/199: : 910it [00:17, 52.39it/s, loss=0.025327]
+eval psnr: 16.77
+epoch: 2/199: : 910it [00:16, 53.95it/s, loss=0.021106]
+eval psnr: 17.40
+epoch: 3/199: : 910it [00:16, 54.72it/s, loss=0.017692]
+eval psnr: 17.96
+epoch: 4/199: : 910it [00:16, 55.24it/s, loss=0.016271]
+eval psnr: 18.23
+epoch: 5/199: : 910it [00:16, 54.93it/s, loss=0.014928]
+eval psnr: 18.41
+epoch: 6/199: : 910it [00:16, 55.37it/s, loss=0.013835]
+eval psnr: 18.47
+epoch: 7/199: : 910it [00:16, 55.43it/s, loss=0.013069]
+eval psnr: 19.43
+epoch: 8/199: : 910it [00:16, 55.03it/s, loss=0.012323]
+eval psnr: 19.29
+epoch: 9/199: : 910it [00:16, 54.86it/s, loss=0.011394]
+eval psnr: 20.04
+epoch: 10/199: : 910it [00:16, 54.98it/s, loss=0.011149]
+eval psnr: 20.12
+epoch: 11/199: : 910it [00:16, 54.98it/s, loss=0.011029]
+eval psnr: 20.27
+epoch: 12/199: : 910it [00:16, 54.42it/s, loss=0.010473]
+eval psnr: 20.25
+epoch: 13/199: : 910it [00:16, 55.01it/s, loss=0.010240]
+eval psnr: 20.49
+epoch: 14/199: : 910it [00:16, 54.82it/s, loss=0.009963]
+eval psnr: 19.80
+epoch: 15/199: : 910it [00:16, 54.73it/s, loss=0.009916]
+eval psnr: 20.48
+epoch: 16/199: : 910it [00:16, 54.42it/s, loss=0.009677]
+eval psnr: 20.49
+epoch: 17/199: : 910it [00:16, 54.56it/s, loss=0.009273]
+eval psnr: 20.52
+epoch: 18/199: : 910it [00:16, 54.70it/s, loss=0.008939]
+eval psnr: 20.62
+epoch: 19/199: : 910it [00:16, 54.87it/s, loss=0.008779]
+eval psnr: 20.54
+epoch: 20/199: : 910it [00:16, 54.83it/s, loss=0.008629]
+eval psnr: 20.95
+epoch: 21/199: : 910it [00:16, 54.59it/s, loss=0.008710]
+eval psnr: 21.12
+epoch: 22/199: : 910it [00:17, 52.87it/s, loss=0.008254]
+eval psnr: 20.91
+epoch: 23/199: : 910it [00:17, 52.26it/s, loss=0.008109]
+eval psnr: 21.16
+epoch: 24/199: : 910it [00:17, 52.09it/s, loss=0.008280]
+eval psnr: 20.87
+epoch: 25/199: : 910it [00:16, 54.27it/s, loss=0.007994]
+eval psnr: 20.93
+epoch: 26/199: : 910it [00:16, 54.59it/s, loss=0.007947]
+eval psnr: 21.90
+epoch: 27/199: : 910it [00:16, 54.58it/s, loss=0.007776]
+eval psnr: 21.33
+epoch: 28/199: : 910it [00:17, 50.64it/s, loss=0.007788]
+eval psnr: 21.24
+epoch: 29/199: : 910it [00:16, 54.36it/s, loss=0.007703]
+eval psnr: 21.65
+epoch: 30/199: : 910it [00:16, 54.95it/s, loss=0.007510]
+eval psnr: 22.06
+epoch: 31/199: : 910it [00:16, 55.11it/s, loss=0.007459]
+eval psnr: 21.65
+epoch: 32/199: : 910it [00:16, 55.10it/s, loss=0.007380]
+eval psnr: 21.98
+epoch: 33/199: : 910it [00:16, 54.96it/s, loss=0.007300]
+eval psnr: 21.33
+epoch: 34/199: : 910it [00:17, 53.51it/s, loss=0.007495]
+eval psnr: 21.25
+epoch: 35/199: : 910it [00:16, 53.83it/s, loss=0.007331]
+eval psnr: 22.14
+epoch: 36/199: : 910it [00:16, 55.13it/s, loss=0.007226]
+eval psnr: 21.91
+epoch: 37/199: : 910it [00:16, 55.21it/s, loss=0.007012]
+eval psnr: 22.37
+epoch: 38/199: : 910it [00:17, 52.19it/s, loss=0.006999]
+eval psnr: 21.88
+epoch: 39/199: : 910it [00:16, 54.92it/s, loss=0.007119]
+eval psnr: 22.39
+epoch: 40/199: : 910it [00:16, 55.26it/s, loss=0.006885]
+eval psnr: 22.38
+epoch: 41/199: : 910it [00:16, 55.43it/s, loss=0.006796]
+eval psnr: 22.26
+epoch: 42/199: : 910it [00:16, 54.68it/s, loss=0.006931]
+eval psnr: 22.64
+epoch: 43/199: : 910it [00:16, 54.94it/s, loss=0.006816]
+eval psnr: 21.89
+epoch: 44/199: : 910it [00:16, 54.89it/s, loss=0.006931]
+eval psnr: 22.13
+epoch: 45/199: : 910it [00:16, 54.22it/s, loss=0.006773]
+eval psnr: 22.40
+epoch: 46/199: : 910it [00:17, 52.51it/s, loss=0.006586]
+eval psnr: 22.52
+epoch: 47/199: : 910it [00:17, 52.83it/s, loss=0.006750]
+eval psnr: 22.49
+epoch: 48/199: : 910it [00:17, 51.30it/s, loss=0.006721]
+eval psnr: 22.65
+epoch: 49/199: : 910it [00:16, 55.77it/s, loss=0.006735]
+eval psnr: 22.73
+epoch: 50/199: : 910it [00:16, 55.89it/s, loss=0.006689]
+eval psnr: 22.08
+epoch: 51/199: : 910it [00:16, 56.05it/s, loss=0.006766]
+eval psnr: 22.13
+epoch: 52/199: : 910it [00:16, 55.92it/s, loss=0.006638]
+eval psnr: 22.94
+epoch: 53/199: : 910it [00:16, 55.92it/s, loss=0.006623]
+eval psnr: 21.73
+epoch: 54/199: : 910it [00:16, 56.14it/s, loss=0.006451]
+eval psnr: 22.48
+epoch: 55/199: : 910it [00:16, 55.44it/s, loss=0.006383]
+eval psnr: 22.70
+epoch: 56/199: : 910it [00:16, 56.18it/s, loss=0.006435]
+eval psnr: 22.72
+epoch: 57/199: : 910it [00:16, 55.98it/s, loss=0.006534]
+eval psnr: 22.79
+epoch: 58/199: : 910it [00:16, 56.06it/s, loss=0.006437]
+eval psnr: 22.23
+epoch: 59/199: : 910it [00:16, 56.02it/s, loss=0.006335]
+eval psnr: 22.78
+epoch: 60/199: : 910it [00:16, 56.10it/s, loss=0.006506]
+eval psnr: 23.41
+epoch: 61/199: : 910it [00:16, 56.25it/s, loss=0.006139]
+eval psnr: 23.41
+epoch: 62/199: : 910it [00:16, 55.88it/s, loss=0.006161]
+eval psnr: 22.44
+epoch: 63/199: : 910it [00:16, 55.75it/s, loss=0.006364]
+eval psnr: 22.66
+epoch: 64/199: : 910it [00:16, 55.95it/s, loss=0.006346]
+eval psnr: 22.81
+epoch: 65/199: : 910it [00:16, 55.34it/s, loss=0.006219]
+eval psnr: 22.63
+epoch: 66/199: : 910it [00:16, 56.06it/s, loss=0.006158]
+eval psnr: 23.09
+epoch: 67/199: : 910it [00:16, 55.83it/s, loss=0.006228]
+eval psnr: 22.76
+epoch: 68/199: : 910it [00:16, 55.93it/s, loss=0.006212]
+eval psnr: 22.81
+epoch: 69/199: : 910it [00:16, 56.00it/s, loss=0.006246]
+eval psnr: 22.38
+epoch: 70/199: : 910it [00:16, 54.05it/s, loss=0.006177]
+eval psnr: 22.73
+epoch: 71/199: : 910it [00:16, 53.69it/s, loss=0.006175]
+eval psnr: 22.89
+epoch: 72/199: : 910it [00:16, 54.60it/s, loss=0.006247]
+eval psnr: 22.71
+epoch: 73/199: : 910it [00:16, 55.47it/s, loss=0.006050]
+eval psnr: 22.38
+epoch: 74/199: : 910it [00:16, 55.53it/s, loss=0.006115]
+eval psnr: 23.19
+epoch: 75/199: : 910it [00:16, 56.14it/s, loss=0.006202]
+eval psnr: 22.67
+epoch: 76/199: : 910it [00:16, 56.05it/s, loss=0.005941]
+eval psnr: 23.51
+epoch: 77/199: : 910it [00:16, 56.12it/s, loss=0.005987]
+eval psnr: 23.40
+epoch: 78/199: : 910it [00:16, 56.28it/s, loss=0.006150]
+eval psnr: 22.98
+epoch: 79/199: : 910it [00:16, 56.14it/s, loss=0.005839]
+eval psnr: 23.56
+epoch: 80/199: : 910it [00:16, 56.09it/s, loss=0.006028]
+eval psnr: 22.72
+epoch: 81/199: : 910it [00:16, 56.15it/s, loss=0.005858]
+eval psnr: 23.69
+epoch: 82/199: : 910it [00:16, 56.03it/s, loss=0.005953]
+eval psnr: 23.30
+epoch: 83/199: : 910it [00:16, 55.73it/s, loss=0.006121]
+eval psnr: 23.25
+epoch: 84/199: : 910it [00:16, 55.84it/s, loss=0.006171]
+eval psnr: 22.87
+epoch: 85/199: : 910it [00:16, 56.31it/s, loss=0.006283]
+eval psnr: 23.22
+epoch: 86/199: : 910it [00:16, 55.86it/s, loss=0.005916]
+eval psnr: 22.86
+epoch: 87/199: : 910it [00:16, 55.88it/s, loss=0.005964]
+eval psnr: 23.12
+epoch: 88/199: : 910it [00:16, 56.00it/s, loss=0.005849]
+eval psnr: 23.20
+epoch: 89/199: : 910it [00:16, 56.01it/s, loss=0.005929]
+eval psnr: 23.06
+epoch: 90/199: : 910it [00:16, 55.72it/s, loss=0.005918]
+eval psnr: 22.60
+epoch: 91/199: : 910it [00:16, 56.04it/s, loss=0.005652]
+eval psnr: 23.04
+epoch: 92/199: : 910it [00:16, 55.84it/s, loss=0.005917]
+eval psnr: 22.64
+epoch: 93/199: : 910it [00:16, 56.10it/s, loss=0.005914]
+eval psnr: 23.41
+epoch: 94/199: : 910it [00:16, 54.12it/s, loss=0.005849]
+eval psnr: 23.42
+epoch: 95/199: : 910it [00:16, 54.01it/s, loss=0.006036]
+eval psnr: 22.63
+epoch: 96/199: : 910it [00:16, 53.84it/s, loss=0.005920]
+eval psnr: 22.39
+epoch: 97/199: : 910it [00:16, 55.95it/s, loss=0.005862]
+eval psnr: 23.85
+epoch: 98/199: : 910it [00:16, 56.06it/s, loss=0.005727]
+eval psnr: 23.08
+epoch: 99/199: : 910it [00:16, 56.15it/s, loss=0.005641]
+eval psnr: 23.46
+epoch: 100/199: : 910it [00:16, 56.28it/s, loss=0.005773]
+eval psnr: 23.11
+epoch: 101/199: : 910it [00:16, 56.01it/s, loss=0.005877]
+eval psnr: 23.18
+epoch: 102/199: : 910it [00:16, 55.92it/s, loss=0.005708]
+eval psnr: 23.07
+epoch: 103/199: : 910it [00:16, 56.02it/s, loss=0.005606]
+eval psnr: 23.20
+epoch: 104/199: : 910it [00:16, 56.12it/s, loss=0.005668]
+eval psnr: 23.41
+epoch: 105/199: : 910it [00:16, 55.98it/s, loss=0.005767]
+eval psnr: 23.18
+epoch: 106/199: : 910it [00:16, 56.07it/s, loss=0.005758]
+eval psnr: 23.14
+epoch: 107/199: : 910it [00:16, 55.86it/s, loss=0.005722]
+eval psnr: 23.39
+epoch: 108/199: : 910it [00:16, 56.09it/s, loss=0.005667]
+eval psnr: 23.30
+epoch: 109/199: : 910it [00:16, 56.13it/s, loss=0.005751]
+eval psnr: 22.82
+epoch: 110/199: : 910it [00:16, 56.09it/s, loss=0.005692]
+eval psnr: 23.28
+epoch: 111/199: : 910it [00:16, 55.93it/s, loss=0.005558]
+eval psnr: 22.67
+epoch: 112/199: : 910it [00:16, 56.20it/s, loss=0.005701]
+eval psnr: 23.21
+epoch: 113/199: : 910it [00:16, 56.16it/s, loss=0.005559]
+eval psnr: 23.46
+epoch: 114/199: : 910it [00:16, 55.87it/s, loss=0.005734]
+eval psnr: 23.20
+epoch: 115/199: : 910it [00:16, 56.12it/s, loss=0.005688]
+eval psnr: 22.88
+epoch: 116/199: : 910it [00:16, 56.03it/s, loss=0.005639]
+eval psnr: 23.14
+epoch: 117/199: : 910it [00:16, 56.11it/s, loss=0.005474]
+eval psnr: 23.33
+epoch: 118/199: : 910it [00:16, 54.80it/s, loss=0.005680]
+eval psnr: 23.23
+epoch: 119/199: : 910it [00:17, 53.34it/s, loss=0.005623]
+eval psnr: 23.97
+epoch: 120/199: : 910it [00:16, 53.56it/s, loss=0.005676]
+eval psnr: 23.56
+epoch: 121/199: : 910it [00:16, 55.19it/s, loss=0.005631]
+eval psnr: 23.12
+epoch: 122/199: : 910it [00:16, 56.14it/s, loss=0.005779]
+eval psnr: 23.58
+epoch: 123/199: : 910it [00:16, 56.12it/s, loss=0.005527]
+eval psnr: 23.36
+epoch: 124/199: : 910it [00:16, 56.11it/s, loss=0.005565]
+eval psnr: 23.56
+epoch: 125/199: : 910it [00:16, 56.18it/s, loss=0.005501]
+eval psnr: 23.82
+epoch: 126/199: : 910it [00:16, 55.95it/s, loss=0.005491]
+eval psnr: 24.03
+epoch: 127/199: : 910it [00:16, 56.20it/s, loss=0.005581]
+eval psnr: 23.44
+epoch: 128/199: : 910it [00:16, 56.22it/s, loss=0.005512]
+eval psnr: 23.24
+epoch: 129/199: : 910it [00:16, 56.08it/s, loss=0.005627]
+eval psnr: 23.28
+epoch: 130/199: : 910it [00:16, 56.22it/s, loss=0.005469]
+eval psnr: 23.36
+epoch: 131/199: : 910it [00:16, 56.19it/s, loss=0.005615]
+eval psnr: 23.72
+epoch: 132/199: : 910it [00:16, 56.32it/s, loss=0.005418]
+eval psnr: 23.10
+epoch: 133/199: : 910it [00:16, 56.26it/s, loss=0.005583]
+eval psnr: 23.21
+epoch: 134/199: : 910it [00:16, 56.08it/s, loss=0.005526]
+eval psnr: 23.75
+epoch: 135/199: : 910it [00:16, 55.88it/s, loss=0.005503]
+eval psnr: 23.99
+epoch: 136/199: : 910it [00:16, 56.14it/s, loss=0.005407]
+eval psnr: 23.83
+epoch: 137/199: : 910it [00:16, 55.80it/s, loss=0.005460]
+eval psnr: 24.01
+epoch: 138/199: : 910it [00:16, 56.24it/s, loss=0.005665]
+eval psnr: 23.48
+epoch: 139/199: : 910it [00:16, 55.92it/s, loss=0.005666]
+eval psnr: 23.62
+epoch: 140/199: : 910it [00:16, 55.88it/s, loss=0.005434]
+eval psnr: 23.45
+epoch: 141/199: : 910it [00:16, 53.65it/s, loss=0.005480]
+eval psnr: 23.45
+epoch: 142/199: : 910it [00:16, 53.97it/s, loss=0.005488]
+eval psnr: 23.68
+epoch: 143/199: : 910it [00:16, 54.30it/s, loss=0.005585]
+eval psnr: 23.07
+epoch: 144/199: : 910it [00:16, 55.87it/s, loss=0.005368]
+eval psnr: 23.13
+epoch: 145/199: : 910it [00:16, 55.90it/s, loss=0.005396]
+eval psnr: 23.42
+epoch: 146/199: : 910it [00:16, 56.22it/s, loss=0.005382]
+eval psnr: 23.42
+epoch: 147/199: : 910it [00:16, 55.95it/s, loss=0.005461]
+eval psnr: 23.50
+epoch: 148/199: : 910it [00:16, 55.91it/s, loss=0.005268]
+eval psnr: 24.07
+epoch: 149/199: : 910it [00:16, 55.69it/s, loss=0.005447]
+eval psnr: 23.20
+epoch: 150/199: : 910it [00:16, 56.18it/s, loss=0.005339]
+eval psnr: 23.68
+epoch: 151/199: : 910it [00:16, 55.94it/s, loss=0.005367]
+eval psnr: 24.40
+epoch: 152/199: : 910it [00:16, 55.85it/s, loss=0.005492]
+eval psnr: 23.77
+epoch: 153/199: : 910it [00:16, 55.90it/s, loss=0.005541]
+eval psnr: 23.10
+epoch: 154/199: : 910it [00:16, 55.99it/s, loss=0.005337]
+eval psnr: 23.53
+epoch: 155/199: : 910it [00:16, 55.58it/s, loss=0.005416]
+eval psnr: 23.52
+epoch: 156/199: : 910it [00:16, 56.01it/s, loss=0.005369]
+eval psnr: 23.76
+epoch: 157/199: : 910it [00:16, 55.87it/s, loss=0.005538]
+eval psnr: 23.30
+epoch: 158/199: : 910it [00:16, 56.05it/s, loss=0.005429]
+eval psnr: 23.25
+epoch: 159/199: : 910it [00:16, 56.01it/s, loss=0.005249]
+eval psnr: 23.87
+epoch: 160/199: : 910it [00:16, 55.93it/s, loss=0.005356]
+eval psnr: 23.71
+epoch: 161/199: : 910it [00:16, 55.95it/s, loss=0.005392]
+eval psnr: 23.36
+epoch: 162/199: : 910it [00:16, 55.76it/s, loss=0.005265]
+eval psnr: 23.35
+epoch: 163/199: : 910it [00:16, 56.07it/s, loss=0.005266]
+eval psnr: 23.54
+epoch: 164/199: : 910it [00:16, 55.75it/s, loss=0.005306]
+eval psnr: 24.00
+epoch: 165/199: : 910it [00:16, 55.69it/s, loss=0.005183]
+eval psnr: 23.88
+epoch: 166/199: : 910it [00:16, 53.92it/s, loss=0.005268]
+eval psnr: 23.41
+epoch: 167/199: : 910it [00:16, 54.47it/s, loss=0.005349]
+eval psnr: 23.59
+epoch: 168/199: : 910it [00:16, 54.76it/s, loss=0.005226]
+eval psnr: 23.64
+epoch: 169/199: : 910it [00:16, 56.28it/s, loss=0.005210]
+eval psnr: 23.11
+epoch: 170/199: : 910it [00:16, 56.15it/s, loss=0.005260]
+eval psnr: 23.93
+epoch: 171/199: : 910it [00:16, 56.07it/s, loss=0.005290]
+eval psnr: 23.77
+epoch: 172/199: : 910it [00:16, 56.06it/s, loss=0.005313]
+eval psnr: 24.18
+epoch: 173/199: : 910it [00:16, 56.05it/s, loss=0.005288]
+eval psnr: 23.74
+epoch: 174/199: : 910it [00:16, 55.67it/s, loss=0.005140]
+eval psnr: 24.25
+epoch: 175/199: : 910it [00:16, 55.87it/s, loss=0.005252]
+eval psnr: 23.38
+epoch: 176/199: : 910it [00:16, 55.96it/s, loss=0.005221]
+eval psnr: 24.19
+epoch: 177/199: : 910it [00:16, 55.96it/s, loss=0.005282]
+eval psnr: 24.03
+epoch: 178/199: : 910it [00:16, 56.07it/s, loss=0.005304]
+eval psnr: 24.40
+epoch: 179/199: : 910it [00:16, 55.95it/s, loss=0.005160]
+eval psnr: 23.58
+epoch: 180/199: : 910it [00:16, 55.83it/s, loss=0.005105]
+eval psnr: 23.80
+epoch: 181/199: : 910it [00:16, 55.87it/s, loss=0.005346]
+eval psnr: 23.90
+epoch: 182/199: : 910it [00:16, 56.12it/s, loss=0.005114]
+eval psnr: 23.81
+epoch: 183/199: : 910it [00:16, 56.01it/s, loss=0.005311]
+eval psnr: 23.72
+epoch: 184/199: : 910it [00:16, 55.98it/s, loss=0.005187]
+eval psnr: 23.19
+epoch: 185/199: : 910it [00:16, 55.83it/s, loss=0.005370]
+eval psnr: 24.12
+epoch: 186/199: : 910it [00:16, 55.88it/s, loss=0.005193]
+eval psnr: 23.50
+epoch: 187/199: : 910it [00:16, 56.04it/s, loss=0.005112]
+eval psnr: 23.52
+epoch: 188/199: : 910it [00:16, 55.98it/s, loss=0.005187]
+eval psnr: 23.62
+epoch: 189/199: : 910it [00:16, 55.73it/s, loss=0.005135]
+eval psnr: 23.05
+epoch: 190/199: : 910it [00:16, 56.31it/s, loss=0.005197]
+eval psnr: 23.37
+epoch: 191/199: : 910it [00:16, 55.44it/s, loss=0.005143]
+eval psnr: 23.71
+epoch: 192/199: : 910it [00:17, 53.46it/s, loss=0.005258]
+eval psnr: 24.09
+epoch: 193/199: : 910it [00:16, 53.77it/s, loss=0.005234]
+eval psnr: 24.13
+epoch: 194/199: : 910it [00:16, 54.86it/s, loss=0.005189]
+eval psnr: 23.40
+epoch: 195/199: : 910it [00:16, 56.05it/s, loss=0.005069]
+eval psnr: 24.06
+epoch: 196/199: : 910it [00:16, 56.13it/s, loss=0.005121]
+eval psnr: 23.84
+epoch: 197/199: : 910it [00:16, 55.94it/s, loss=0.005181]
+eval psnr: 24.22
+epoch: 198/199: : 910it [00:16, 55.81it/s, loss=0.005195]
+eval psnr: 23.33
+epoch: 199/199: : 910it [00:16, 55.86it/s, loss=0.005125]
+eval psnr: 24.09
+best epoch: 151, psnr: 24.40"""
+
 def analyze(log):
     evalpsnr = []
     epoch = []
@@ -1689,6 +2091,7 @@ psnr2, bestepoch2, loss2 = analyze(log2)
 psnr3, bestepoch3, loss3 = analyze(log3)
 psnr4, bestepoch4, loss4 = analyze(log4)
 psnr5, bestepoch5, loss5 = analyze(log5)
+psnr6, bestepoch6, loss6 = analyze(log6)
 
 plt.figure()
 plt.plot(loss1, label='SRCNN Loss')
@@ -1696,6 +2099,7 @@ plt.plot(loss2, label='SRResNet Loss')
 plt.plot(loss3, label='VDSR Loss')
 plt.plot(loss4, label='CARN Loss')
 plt.plot(loss5, label='MemNet Loss')
+plt.plot(loss6, label='SRGAN Loss')
 plt.title('Loss')
 plt.legend()
 plt.grid(True)
@@ -1707,6 +2111,7 @@ plt.plot(psnr2, label='SRResNet psnr')
 plt.plot(psnr3, label='VDSR psnr')
 plt.plot(psnr4, label='CARN psnr')
 plt.plot(psnr5, label='MemNet psnr')
+plt.plot(psnr6, label='SRGAN psnr')
 plt.title('psnr')
 plt.legend()
 plt.grid(True)
