@@ -6,14 +6,15 @@ from torch import nn
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
 from torch.utils.data.dataloader import DataLoader
+from torch.autograd import Variable
 from tqdm import tqdm
 
 from models.models import SRCNN, VDSR, SRResNet
 from models.LapSRN import Net as LapSRN
 from models.CARN import Net as CARN
 from models.memnet import MemNet as MemNet
-
-from utils import AverageMeter, calc_psnr
+from models.SRGAN import Generator,Discriminator
+from utils import AverageMeter, calc_psnr,GeneratorLoss
 import torch.nn.functional as F
 from dataset import PreprocessDataset
 
@@ -38,6 +39,7 @@ if __name__ == '__main__':
 
     cudnn.benchmark = True
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    print("Training on ",device)
 
     torch.manual_seed(args.seed)
 
@@ -48,9 +50,11 @@ if __name__ == '__main__':
     eval_dataloader = DataLoader(eval_dataset, batch_size=args.batch_size)
 
 
-    modelName = "MemNet"
+    modelName = "SRGAN"
     needup = False
-
+    modelD = Discriminator().to(device)
+    optimizerD = optim.Adam(modelD.parameters(),lr=args.lr)
+    
     if modelName == "SRCNN":
         model = SRCNN(3).to(device)
         needup = True
@@ -67,6 +71,10 @@ if __name__ == '__main__':
     elif modelName == "MemNet":
         model = MemNet(3, 64, 6, 6).to(device)
         needup = True
+    elif modelName == "SRGAN":
+        model = Generator(args.scale).to(device)
+        GANloss = GeneratorLoss().to(device)
+        needup = False
 
 
     criterion = nn.MSELoss()
@@ -79,27 +87,56 @@ if __name__ == '__main__':
     for epoch in range(args.num_epochs):
         model.train()
         epoch_losses = AverageMeter()
-
+        if(modelName=="SRGAN"):
+            modelD.train()
         with tqdm(total=(len(train_dataset) - len(train_dataset) % args.batch_size), ncols=80) as t:
             t.set_description('epoch: {}/{}'.format(epoch, args.num_epochs - 1))
 
             for data in train_dataloader:
                 inputs, labels = data
-
                 inputs = inputs.to(device)
                 labels = labels.to(device)
                 if needup:
                     inputs = F.interpolate(inputs, size=labels.shape[2:], mode='bicubic', align_corners=False)
-
-                preds = model(inputs)
-
-                loss = criterion(preds, labels)
-
-                epoch_losses.update(loss.item(), len(inputs))
-
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
+                if(modelName=="SRGAN"):
+                    g_update_first=True
+                    real_img = Variable(labels)
+                    z = Variable(inputs)
+                    real_img = real_img.to(device)
+                    # print(real_img.shape)
+                    z = z.to(device)
+                    fake_img = model(z)
+                    # print(fake_img.shape)
+                    modelD.zero_grad()
+                    real_out = modelD(real_img).mean()
+                    fake_out = modelD(fake_img).mean()
+                    d_loss = 1 - real_out + fake_out
+                    d_loss.backward(retain_graph=True)
+                    optimizerD.step()
+                    model.zero_grad()
+                    fake_img = model(z)
+                    fake_out = modelD(fake_img).mean()
+                    g_loss = GANloss(fake_out,fake_img,real_img)
+                    g_loss.backward()
+                    fake_img = model(z)
+                    fake_out = modelD(fake_img).mean()
+                    optimizer.step()
+                    model.eval()
+                    preds = model(inputs)
+                    loss = criterion(preds,labels)
+                    epoch_losses.update(loss.item(),len(inputs))
+                # inputs, labels = data
+                # inputs = inputs.to(device)
+                # labels = labels.to(device)
+                # if needup:
+                #     inputs = F.interpolate(inputs, size=labels.shape[2:], mode='bicubic', align_corners=False)
+                else:
+                    preds = model(inputs)
+                    loss = criterion(preds, labels)
+                    epoch_losses.update(loss.item(), len(inputs))
+                    optimizer.zero_grad()
+                    loss.backward()
+                    optimizer.step()
 
                 t.set_postfix(loss='{:.6f}'.format(epoch_losses.avg))
                 t.update(len(inputs))
