@@ -14,6 +14,8 @@ from models.LapSRN import Net as LapSRN
 from models.CARN import Net as CARN
 from models.memnet import MemNet as MemNet
 from models.SRGAN import Generator,Discriminator
+from models.SRCNNA import SRCNNA
+from models.SRResSCA import SRResSCA
 from utils import AverageMeter, calc_psnr,GeneratorLoss
 import torch.nn.functional as F
 from dataset import PreprocessDataset
@@ -50,7 +52,7 @@ if __name__ == '__main__':
     eval_dataloader = DataLoader(eval_dataset, batch_size=args.batch_size)
 
 
-    modelName = "SRGAN"
+    modelName = "SRResSCA"
     needup = False
     modelD = Discriminator().to(device)
     optimizerD = optim.Adam(modelD.parameters(),lr=args.lr)
@@ -75,7 +77,11 @@ if __name__ == '__main__':
         model = Generator(args.scale).to(device)
         GANloss = GeneratorLoss().to(device)
         needup = False
-
+    elif modelName == "SRCNNA":
+        model = SRCNNA(3).to(device)
+        needup = True
+    elif modelName == "SRResSCA":
+        model = SRResSCA().to(device)
 
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
